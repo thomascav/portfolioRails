@@ -31,7 +31,10 @@
                 <div id="cssvmenu" class="navbar hidden-xs hidden-sm col-md-2 col-lg-2 ">
                     <ul>
                         <li>
-                            <span><img id="portrait" src="public/imgages/thom.png" alt="portrait" class="img-responsive"/></span>
+                            <span>
+                                <%= image_tag("/images/thom.png",  :id => 'portrait') %>
+                                <!-- <img id="portrait" src="public/images/thom.png" alt="portrait" class="img-responsive"/> -->
+                            </span>
                         </li>
                         <li>
                             <button id="popover" type="button" class="btn btn-default" data-container="body" data-toggle="popover" title="Thomas Cavalar, 37 ans" data-placement="right" data-content="Web-developpeur junior en formation">
@@ -68,7 +71,8 @@
                     </ul>
                 </div>
                 <div class="corpus col-md-10 col-lg-10 col-md-offset-2">
-                    <img id="strings" src="public/imgages/strings.png" alt="strings" class="img-responsive"/>
+                    <%= image_tag("/images/strings.png",  :id => 'strings') %>
+                    <!-- <img id="strings" src="public/images/strings.png" alt="strings" class="img-responsive"/> -->
                     <div class="corpus col-md-10 col-lg-9 col-md-offset-1">
                         <section id="cursus">
                             <h3>Cursus</h3>
