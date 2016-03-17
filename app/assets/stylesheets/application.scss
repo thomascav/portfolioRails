@@ -15,3 +15,297 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ // Place all the styles related to the Static-pages controller here.
+ // They will automatically be included in application.css.
+ // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+ /*==================================================
+ General
+ ==================================================*/
+ body {
+     font-size: 62.5%;
+     font-family: Comfortaa;
+     background-color: #2E2B26;
+ }
+
+ /*==================================================
+ navbar
+ ==================================================*/
+ #cssvmenu {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   line-height: 1;
+   height: 200px;
+   background-repeat: repeat-y;
+   height:inherit;
+   position:fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   width: 100px;
+   border-right: 4px solid #D50000;
+   z-index: 1000;
+   font-family: Comfortaa;
+   clear: right;
+ }
+ #cssvmenu #portrait {
+     border-radius: 100px;
+     border: 5px solid white;
+     height: 170px;
+     margin-left: 5%;
+     margin-bottom: 20px;
+     margin-top: 20px;
+ }
+ #popover {
+     margin-left: 40px;
+     margin-bottom: 20px;
+     color: black;
+ }
+ .popover-title {
+     color: black;
+ }
+ #cssvmenu ul,
+ #cssvmenu ul li,
+ #cssvmenu ul ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+ #cssvmenu ul {
+   position: relative;
+   z-index: 597;
+   float: left;
+ }
+ #cssvmenu ul li {
+   float: left;
+   min-height: 1px;
+   line-height: 1em;
+   vertical-align: middle;
+   position: relative;
+ }
+ #cssvmenu ul li.hover,
+ #cssvmenu ul li:hover {
+   position: relative;
+   z-index: 599;
+   cursor: default;
+ }
+ #cssvmenu ul ul {
+   visibility: hidden;
+   position: absolute;
+   top: 100%;
+   left: 0px;
+   z-index: 598;
+   width: 100%;
+ }
+ #cssvmenu ul ul li {
+   float: none;
+ }
+ #cssvmenu ul ul ul {
+   top: -2px;
+   right: 0;
+ }
+ #cssvmenu ul li:hover > ul {
+   visibility: visible;
+ }
+ #cssvmenu ul ul {
+   top: 1px;
+   left: 99%;
+ }
+ #cssvmenu ul li {
+   float: none;
+ }
+ #cssvmenu ul ul {
+   margin-top: 1px;
+ }
+ #cssvmenu ul ul li {
+   font-weight: normal;
+ }
+ /* Custom CSS Styles */
+ #cssvmenu {
+   width: 200px;
+   background: #2E2B26;
+   zoom: 1;
+   font-size: 12px;
+   /*background: #4F4B41;*/
+ }
+ #cssvmenu:before {
+   content: "";
+   display: block;
+ }
+ #cssvmenu:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ #cssvmenu a {
+   display: block;
+   padding: 15px 20px;
+   color: #ffffff;
+   text-decoration: none;
+   text-transform: uppercase;
+ }
+ #cssvmenu > ul {
+   width: 200px;
+ }
+ #cssvmenu ul ul {
+   width: 200px;
+ }
+ #cssvmenu > ul > li > a {
+   border-right: 4px solid #D50000;
+   color: #ffffff;
+   margin-left: 20px;
+ }
+ #cssvmenu > ul > li > a:hover {
+   color: #ffffff;
+ }
+ #cssvmenu > ul > li.active a {
+    background: #2E2B26;
+    background: #2E2B26;
+ }
+ #cssvmenu > ul > li a:hover,
+ #cssvmenu > ul > li:hover a {
+   background: #4F4B41;
+   /*background: #2E2B26;*/
+ }
+ #cssvmenu li {
+   position: relative;
+ }
+ #cssvmenu ul ul li.first {
+   -webkit-border-radius: 0 3px 0 0;
+   -moz-border-radius: 0 3px 0 0;
+   border-radius: 0 3px 0 0;
+ }
+ #cssvmenu ul ul li.last {
+   -webkit-border-radius: 0 0 3px 0;
+   -moz-border-radius: 0 0 3px 0;
+   border-radius: 0 0 3px 0;
+   border-bottom: 0;
+ }
+ #cssvmenu ul ul {
+   -webkit-border-radius: 0 3px 3px 0;
+   -moz-border-radius: 0 3px 3px 0;
+   border-radius: 0 3px 3px 0;
+ }
+ #cssvmenu ul ul {
+   /*border: 1px solid #D50000;*/
+ }
+ #cssvmenu ul ul a {
+   font-size: 12px;
+   color: #ffffff;
+ }
+ #cssvmenu ul ul a:hover {
+   color: #ffffff;
+ }
+ #cssvmenu ul ul li {
+   border-bottom: 1px solid #B71C1C;
+ }
+ #cssvmenu ul ul li:hover > a {
+   background: #B71C1C;
+   color: #ffffff;
+ }
+ #cssvmenu.align-right > ul > li > a {
+   /*border-left: 4px solid #d50000;*/
+   border-right: none;
+ }
+ #cssvmenu.align-right {
+   float: right;
+ }
+ #cssvmenu.align-right li {
+   text-align: right;
+ }
+ #cssvmenu.align-right ul ul {
+   visibility: hidden;
+   position: absolute;
+   top: 0;
+   left: -100%;
+   z-index: 598;
+   width: 100%;
+ }
+ #cssvmenu.align-right ul ul li.first {
+   -webkit-border-radius: 3px 0 0 0;
+   -moz-border-radius: 3px 0 0 0;
+   border-radius: 3px 0 0 0;
+ }
+ #cssvmenu.align-right ul ul li.last {
+   -webkit-border-radius: 0 0 0 3px;
+   -moz-border-radius: 0 0 0 3px;
+   border-radius: 0 0 0 3px;
+ }
+ #cssvmenu.align-right ul ul {
+   -webkit-border-radius: 3px 0 0 3px;
+   -moz-border-radius: 3px 0 0 3px;
+   border-radius: 3px 0 0 3px;
+ }
+ /*==================================================
+ /navbar
+ ==================================================*/
+ h1 {
+     text-align: center;
+     background-color: #2E2B26;
+     color: white;
+     margin-left: 5%;
+     font-family: 'Pacifico', cursive;
+     font-size: 8em;
+     border-bottom: 4px solid #D50000;
+ }
+ #strings {
+     max-width: 100%;
+     min-height: 200px;
+     margin-bottom: 90px;
+     width: 100%;
+     margin-left: -30px;
+ }
+ .corpus section {
+     margin-top: 70px;
+     margin-bottom: 70px;
+ }
+ .corpus hr {
+     margin-top: 70px;
+     margin-bottom: 70px;
+ }
+ #travaux p {
+     font-size: 1.6em;
+     color: white;
+ }
+ h3 {
+     color: white;
+     margin-top: 50px;
+ }
+ hr {
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+ footer {
+     background-color: black;
+ }
+
+ /*==================================================
+ /corps
+ ==================================================*/
+ .toggableTab {
+     border:2px solid #EBDBC2;
+     border-radius: 20px;
+     background-color: #2E2B26;
+     font-size: 1.6em;
+     padding: 20px;
+ }
+ .toggableTab h4 {
+     color: black;
+     padding-bottom: 50px;
+     text-align: center;
+ }
+ .tab-pane {
+     background-color: #9C9181;
+     padding: 50px;
+     border-radius: 0 0 10px 10px;
+ }
+ .tab-pane ul li {
+     padding-bottom: 10px;
+ }
+ .tab-content .active {
+     background-color: #9C9181;
+ }
