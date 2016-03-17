@@ -1,2 +1,217 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Portfolio Thomas Cavalar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body id="home">
+        <article class="container-fluid">
+            <div class="row">
+                <header>
+                    <h1>Portfolio</h1>
+                </header>
+                <div id="cssvmenu" class="navbar hidden-xs hidden-sm col-md-2 col-lg-2 ">
+                    <ul>
+                        <li>
+                            <span><img id="portrait" src="public/imgages/thom.png" alt="portrait" class="img-responsive"/></span>
+                        </li>
+                        <li>
+                            <button id="popover" type="button" class="btn btn-default" data-container="body" data-toggle="popover" title="Thomas Cavalar, 37 ans" data-placement="right" data-content="Web-developpeur junior en formation">
+                                Qui suis-je ?
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#home">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#cursus">
+                                <span>Cursus</span>
+                            </a>
+
+                        </li>
+                        <!-- <li>
+                            <a href="#experiences">
+                                <span>Expériences</span>
+                            </a>
+
+                        </li> -->
+                        <li>
+                            <a href="#travaux">
+                                <span>Travaux</span>
+                            </a>
+                        </li>
+                        <li class="last">
+                            <a href="#contact">
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="corpus col-md-10 col-lg-10 col-md-offset-2">
+                    <img id="strings" src="public/imgages/strings.png" alt="strings" class="img-responsive"/>
+                    <div class="corpus col-md-10 col-lg-9 col-md-offset-1">
+                        <section id="cursus">
+                            <h3>Cursus</h3>
+                            <hr>
+                            <!-- ==============================
+                                toggable table
+                    ============================== -->
+                            <div class="toggableTab">
+
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#presentation">Présentation</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#NonNumérique">Général</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#Numérique">Numérique</a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div id="presentation" class="tab-pane fade in active">
+                                        <h4>Présentation</h4>
+                                        <p>J'ai toujours été intéressé par les outils numériques, mais ce n'est que "récemment" que j'ai décidé de "prendre le taureau par les cornes" et de me mettre sérieusement à leur utilisation.</p>
+                                    </div>
+                                    <div id="NonNumérique" class="tab-pane fade">
+                                        <h4>Général</h4>
+                                        <ul>
+                                            <li>1997 : Baccalauréat ES</li>
+                                            <li>1999 : DEUG de Sociologie, Université de Lille 1</li>
+                                            <li>2000 : Licence de Sociologie, Université de Lille 3</li>
+                                            <li>2007 : réussite au concours de recrutement des professeurs des écoles après 1 année de préparation en IUFM (Arras)</li>
+                                        </ul>
+                                    </div>
+                                    <div id="Numérique" class="tab-pane fade">
+                                        <h4>Numérique</h4>
+                                        <ul>
+                                            <li>Premières approches Photoshop, HTML/CSS, Flash/Action Script 3, Gimp</li>
+                                            <li>Octobre 2015 - Avril 2016 : Simplon Roubaix, formation intensive développeur Web/Mobile (HTML/CSS, Bootstrap/Foundation Javascript, Jquery, Ruby/Rails, Php, installation/configuration serveur )</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </section>
+                        <!-- ==============================
+                        /toggable table
+            ============================== -->
+
+                        <!-- <section id="experiences">
+                <h3>Expériences</h3>
+                <hr>
+                <hr>
+            </section> -->
+
+                        <section id="travaux">
+                            <h3>Travaux</h3>
+                            <hr>
+                            <p>
+                                Les divers travaux présentés ici ont été réalisés dans le cadre de la formation simplon.
+                            </p>
+                            <p>
+                                L'idée est donc de présenter sous forme de chronologie afin de pouvoir les aborder avec une approche de progression.
+                            </p>
+
+                            <hr>
+                        </section>
+                        <section id="contact">
+                            <h3>Contactez moi !</h3>
+                            <hr>
+                            <hr>
+                        </section>
+
+                    </div>
+                </div>
+            </article>
+            <footer class="text-center">
+                <div class="footer-above">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-col col-md-4">
+                                <h3>Location</h3>
+                                <p>Rue de la Gare<br>59170 CROIX</p>
+                            </div>
+                            <div class="footer-col col-md-4">
+                                <h3>Sur les réseaux</h3>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="#" class="btn-social btn-outline">
+                                            <i class="fa fa-fw fa-facebook fa-2x"></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://twitter.com/ThomaCav" class="btn-social btn-outline">
+                                            <i class="fa fa-fw fa-twitter fa-2x"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn-social btn-outline">
+                                            <i class="fa fa-fw fa-linkedin fa-2x"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/thomascav" class="btn-social btn-outline">
+                                            <i class="fa fa-github fa-2x"></i>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="footer-col col-md-4">
+                                <h3>About</h3>
+                                <p>Site réalisé en HTML, CSS, JQuery & Rails</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+            <!-- <script>
+        window.jQuery || document.write("<script src=" js / vendor / jquery - 1.11 .3.min.js "><\/script>")
+    </script> -->
+            <script src="js/plugins.js"></script>
+            <script src="js/main.js"></script>
+
+            <!-- Google Analytics: change UA-XXXXX-X to be your site"s ID. -->
+            <script>
+                (function (b, o, i, l, e, r) {
+                    b.GoogleAnalyticsObject = l;
+                    b[l] || (b[l] = function () {
+                        (b[l].q = b[l].q || []).push(arguments)
+                    });
+                    b[l].l =+ new Date;
+                    e = o.createElement(i);
+                    r = o.getElementsByTagName(i)[0];
+                    e.src = "https://www.google-analytics.com/analytics.js";
+                    r.parentNode.insertBefore(e, r)
+                }(window, document, "script", "ga"));
+                ga("create", "UA-XXXXX-X", "auto");
+                ga("send", "pageview");
+            </script>
+        </body>
+    </html>
